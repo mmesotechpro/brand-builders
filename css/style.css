@@ -1,0 +1,360 @@
+/********general-sizing*/
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+html{
+    font-family:"Rubik", sans-serif;
+}
+/*************using color vaiables**********/
+:root{
+    --color-primay:#fff;
+    --color-secondary:#000;
+    --secondary-color:#cccccc;
+    --color-secondary2:#64e1e9;
+    --color-section3:#13b7be;
+}
+/***************reusable components************/
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row:not(:last-child){
+    margin-bottom: 50px;
+}
+.row [class^="col-"]{
+    float: left;
+}
+
+.row .col-1-of-2{
+    width: calc(100%  /2);
+}
+
+
+.row .col-1-of-3{
+    width: calc(100%  /3);
+}
+/***************utility classes****************/
+.text-center{
+    text-align: center;
+}
+/********************buttons*************/
+.btn{
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--color-primay);
+    background-color: var(--color-secondary);
+}
+.btn-section-about{
+    border: solid 1px var(--color-secondary);
+    border-radius: 0;
+    background-color: var(--color-primay);
+    color: var(--color-secondary);
+    margin-right: 20px;
+}
+.btn-white{
+    background-color: var(--color-primay);
+    color: #000;
+}
+.btn-service{
+    border:  solid 1px var(--color-section3);
+    border-radius: 0;
+    color: #000;
+    background-color: #fff;
+}
+.btn-blue{
+    background-color: var(--color-secondary2);
+    color: var(--color-primay);
+}
+.business-btn{
+    border-radius: 0;
+}
+.header{
+    height: 90vh;
+    padding: 20px 0;
+}
+/*******************nav starts here*/
+.nav-container{
+    margin: 0 auto;
+    max-width: 1140px;
+}
+.nav-container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.brand-span{
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color:var(--color-secondary) 
+    
+}
+.nav-brand{
+    float: left;
+}
+.brand-name{
+    text-decoration: none;
+}
+.nav-icon{
+    float: right;
+    color: #13b7be;
+}
+.icon-text{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/***********************************hero starts here**************************/
+.hero{
+    padding-top: 50px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.hero-text-box{
+    padding: 15px;
+}
+.hero-textheading{
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.hero-paragraph{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-bottom: 40px;
+}
+.hero-image{
+    width: 100%;
+}
+
+
+/*************************************************section features***************/
+.features{
+    color: var(--color-primay);
+    text-align: center;
+    padding: 90px 20px;
+}
+.features1{
+    background-color:var(--color-secondary) ;
+}
+.features2{
+    background-color:var(--color-secondary2) ;
+}
+.features3{
+    background-color:var(--color-section3) ;
+}
+.features-heading{
+    color: var(--color-primay);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.features-paragraph{
+    color: var(--color-primay);
+    
+}
+/*******************section about*****************************/
+.section-about{
+   padding: 100px 0;
+}
+.section-about-icon{
+   font-size: 60px;
+}
+
+.section-about-text-box{
+     width: 600px;
+     text-align: center;
+    
+}
+.section-about-heading{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 50;
+    line-height: 60px;
+}
+.section-about-text-para{
+    margin-bottom: 40px;
+}
+
+/*******************section about ************************/
+.what-image-container{
+    height: 500px;
+}
+.what-image{
+    width: 100%;
+    height: 100%;
+}
+.what-textbox-container{
+    background-color: var(--color-section3);
+    padding: 40px;
+    color: var(--color-primay);
+    height: 500px;
+}
+.sectuion-what-heading{
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.section-what-para{
+    margin-bottom: 15px;
+    
+}
+.section-what-para2{
+    margin-bottom: 20px;
+}
+/********************************************* section sevice starts *****************************/
+.our-services{
+    padding: 100px 0;
+}
+.service-heading{
+    margin-bottom: 40px;
+}
+.service-icon-container{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-section3);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+.service-icon{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+  
+}
+.ser-heading{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.service-text-box{
+    text-align: center;
+    padding:  0 70px;
+}
+.text-heading{
+    margin-bottom: 20px;
+}
+
+.section-discuss{
+    background-color: rgb(235, 230, 230);
+}
+.discuss-textbox{
+   
+    padding: 100px 30px;
+}
+.discuss-heading{
+    margin-bottom: 20px ;
+   
+}
+.discuss-para1{
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: large;
+}
+.discuss-para2{
+    line-height: 18px;
+    margin-bottom: 40px;
+}
+.discuss-image{
+    width: 100%;
+}
+.text{
+    background-color: gold;
+}
+
+.setion-blue{
+    background-color: var(--color-section3);
+    padding: 100px 40px;
+    color: var(--color-primay);
+}
+.blue-textbox{
+    float: left;
+}
+.blue-heading{
+    margin-bottom: 20px;
+}
+.button-container{
+    float: right;
+    margin-left: 30px;
+}
+
+.section-business{
+    padding: 100px 0;
+}
+.business-textbox{
+    text-align: center;
+}
+.business-heading{
+    text-transform: capitalize;
+}
+.business-button{
+    text-align: center;
+    margin-top: 80px;
+}
+.foot{
+    background-color: #000;
+    padding: 100px 0;
+}
+
+.foot-container{
+    margin: 0 auto;
+    width: 250px;
+    padding: 15px 15px;
+}
+.foot-container::after{
+    content: "";
+    display: table;
+    clear: left;
+}
+.foot-list{
+    list-style: none;
+}
+.list-item{
+    float: left;
+    margin-right: 40px;
+    text-transform: capitalize;
+    color: #fff;
+}
+.list-item:after:not(:last-child){
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
